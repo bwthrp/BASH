@@ -2,11 +2,11 @@
 
 Here is the key for the way I setup my assignments:
 
-### = the assignment that I copy and pasted in
+/### = the assignment that I copy and pasted in
 
-# = my comments
+/# = my comments
 
-### Master Assignment list ###
+/### Master Assignment list ###
 
 ...Week 3...
 
