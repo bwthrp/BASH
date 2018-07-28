@@ -8,23 +8,6 @@ Here is the key for the way I setup my assignments:
 
 /### Master Assignment list ###
 
-...Week 3...
-
-Conditional Statements
-
-For this weeks assignment, you will write three scripts.
-
-    Write a script called checking that will do the following:
-        Take a command-line argument, a user's login name.
-        Test to see if a command-line argument was provided.
-        Check to see if the user is in the /etc/passwd file.  If so, the script will print:
-        "Found " " in the /etc/passwd file."
-        Otherwise, the script will print:
-        "No such user on our system"
-
-    Write a script that will use an if/then/elif/else construct that prints information about the current month (use the date command). The script should print the number of days in this month, and display whether the current year is a leap year or not, if the current month is February.
-
-    Write a third script that performs the same functionality as the second script (date script above), except you must implement it using a case statement.
 
 ...Week 4...
 
@@ -81,3 +64,51 @@ Health foods…
 Dieting is so boring.
 
 Enjoy your meal.
+
+
+
+...Week 5...
+
+
+    Write a script named add that takes two command line arguments and displays as output their sum. The script is required to contain a function named add that takes these two arguments and returns their sum.  Your script should also verify that the user entered two and only two arguments at the command line. If the user does not execute the program correctly, an error should be display describing the correct usage.
+
+    Example run:
+    add 5 8
+    The sum is 13
+
+    Write a bash script where the script chooses a number between   1   and   10.
+
+    A user is then prompted to enter a guess.   If the user guesses wrong,  then the prompt appears again until the guess is correct.  If the guess was less than the correct number than a message should be displayed such as, "Your guess was too low".  If the guess was higher than the correct number than a message should be displayed such as, "Your guess was too high".
+
+    When the user has made a successful guess the script will print to the screen "Guess Correct" and the program exits.
+
+    This script must utilize functions and be modularized.  Possible functions could include readInput, checkAnswer, and displayOutput.  The functions should utilize parameters and return output.
+
+...Week 6...
+
+For this week you will write one script and complete two exercises.
+
+Assignment 1:  Write a function, palindrome which checks whether its command-line argument is a palindrome (that is, a word or phrase that is spelled the same backward and forward). Note that spaces and punctuation are ignored in the test. Exit successfully if it is a palindrome. Include an option to print a message as well as set the return code.
+
+Assignment 2 (refer to the file called datebook below).  Search the 'datebook' file for the below using the grep command:
+
+    Print all lines where the person’s first name starts with J.
+    Print all lines ending in 700
+    Print all lines where birthdays are in December (assume the user does not know the details of the file format, assume no colon precedes the month)
+    Print all lines where the phone number is in the 408 area code (same as previous question, assume no colon precedes the area code)
+    Print lines preceded by a line number where the salary is a six-figure number
+
+Assignment 3 (refer to the file called datebook below).  Search the 'datebook' file for the below using the sed command:
+
+    Change the name Jon to Jonathan
+    Delete the first three lines
+    Print all lines where the birthdays are in November or December
+    Append three asterisks to the end of lines starting with Fred
+    Replace the line containing Jose with JOSE HAS RETIRED.
+
+Here is a link to the datebook.txtPreview the document datafile.
+
+Please submit a text file with each grep and sed command listed.  Please make sure the command is exact.  The format of the file should not affect the command.  If I modify a phone number or date to another phone number or date, then the command should still work.  I should be able to copy/paste the command into a bash shell and it should produce the correct output.
+
+Note: You can convert the datebook.txt file to Unix format using the dos2unix command.
+
