@@ -9,43 +9,38 @@
 ## Provide a comment section at the top of the script, with your name, the date, and the purpose of the program. #See Above
 
 ## Use the select loop to produce a menu of foods.
-menu=("Steak and potatoes" "Fish and chips" "Soup and salad")
+#menu=("Steak and potatoes" "Fish and chips" "Soup and salad")
 
 PS3="Please make a selection."
-select choice in "${menu[@]}";    
+while true ; do 
+select choice in\
+    "Steak and potatoes"\
+    "Fish and chips"\
+    "Soup and Salad"    
 do
     case "$REPLY" in
         "1")
         echo "Stick to your ribs" 
         echo "Watch your cholesterol."
         echo "Enjoy your meal."
-        continue
+        break
         ;;
         "2")
         echo "British are coming!" 
         echo "Enjoy your meal."
-        continue
+        break
         ;;
         "3")
         echo "Health foods…"
         echo "Dieting is so boring."
         echo "Enjoy your meal."
-        continue
+        break
         ;;
         *)
-        echo "Not a valid option"; continue;;
+        echo "Not a valid option"; break;;
     esac
 done
-
-while choice=$("${menu[@]}"); do
-    case "$choice" in
-    "${menu[0]}") echo "Stick to your ribs";;
-    "${menu[1]}") echo "British are coming!";;
-    "${menu[0]}") echo "Health foods..."
-    *) echo "Try another option"
-    esac
 done
-    
 
 ##Produce output to resemble the following:
 
